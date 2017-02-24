@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "#Hepler function for displaying the map using shiny app\nlibrary(rgbif)\noccurence_map <- function(country,classKey){\n  data <- occ_data(\n    country = country,\n    classKey = as.numeric(classKey),\n    limit= 100)\n  data <- data$data\n  gbifmap(data,mapdatabase = \"world\")\n}",
+    "created" : 1487853288662.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1962017433",
+    "id" : "4703C8B",
+    "lastKnownWriteTime" : 1487870792,
+    "last_content_update" : 1487870792843,
+    "path" : "E:/study/programming/gsoc/rgbif/solution/medium/inst/shiny-examples/medium-app/helper.R",
+    "project_path" : "helper.R",
+    "properties" : {
+    },
+    "relative_order" : 3,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

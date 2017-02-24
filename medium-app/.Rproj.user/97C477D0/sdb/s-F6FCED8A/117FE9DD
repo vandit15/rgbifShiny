@@ -1,0 +1,20 @@
+{
+    "collab_server" : "",
+    "contents" : "\n# This is the user-interface definition of a Shiny web application.\n# You can find out more about building applications with Shiny here:\n#\n# http://shiny.rstudio.com\n#\n\nlibrary(shiny)\n\nshinyUI(fluidPage(\n\n  # Application title\n  titlePanel(\"GBIF occurence data\"),\n\n  # Sidebar with a slider input for number of bins\n  sidebarLayout(\n    sidebarPanel(\n      textInput(\n        \"countryInput\",label=h3(\"Choose country\"),\n        value = \"IN\"\n      ),\n      textInput(\n        \"classKeyInput\",label=h3(\"Choose classKey\"),\n        value = 359\n      )\n    ),\n\n    # Show a plot of the generated distribution\n    mainPanel(\n      plotOutput(\"map\")\n    )\n  )\n))\n",
+    "created" : 1487814275659.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "1979398672",
+    "id" : "117FE9DD",
+    "lastKnownWriteTime" : 1487865929,
+    "last_content_update" : 1487865929792,
+    "path" : "E:/study/programming/gsoc/rgbif/solution/medium/inst/shiny-examples/medium-app/ui.R",
+    "project_path" : "ui.R",
+    "properties" : {
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}
